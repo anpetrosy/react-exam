@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@200&family=Shadows+Into+Light&display=swap');
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: gainsboro;
+  padding-top: 140px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.weather {
+  padding: 30px;
+  align-items: center;
+  width: 500px;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  background: linear-gradient(160deg, rgb(54, 196, 196) 0%, rgb(8, 95, 172) 100%);
+  &-error {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 28px;
+  }
+  &-info {
+    margin-top: 60px;
+    > h1 {
+      font-size: 64px;
+      letter-spacing: 3px;
+    }
+    > h2 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+    }
+    &-details {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-col {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        &-wind {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+        }
+        &-humidity {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+        }
+        > img {
+          margin-right: 10px;
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+  &-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    > input {
+      border: none;
+      outline: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: gainsboro;
+      color: black;
+      border-radius: 30px;
+      flex: 1;
+      margin-right: 12px;
+    }
+    > button {
+      background-color: gainsboro;
+      border: none;
+      outline: none;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      cursor: pointer;
+      padding-top: 4px;
+    }
+    > button img {
+      width: 26px;
+    }
+  }
+}
+
+#wind {
+  margin-left: 80px;
+}
